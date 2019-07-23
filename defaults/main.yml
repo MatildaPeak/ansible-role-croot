@@ -9,11 +9,11 @@ namespace: "{{ meta.namespace|default('croot') }}"
 # Create the namespace?
 create_namespace: yes
 
-# The croot image tag and pull policy
+# The image tag and pull policy
 image_tag: 2019.2
 image_pull_policy: IfNotPresent
 
-# The port to expose the croot service on
+# The port to expose the application service on
 service_port: 8080
 
 # To uninstall from the cluster

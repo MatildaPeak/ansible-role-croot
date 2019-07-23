@@ -19,7 +19,6 @@
   k8s:
     state: '{{ state }}'
     definition: "{{ lookup('template', item.name)|from_yaml }}"
-  when: item.api_exists|default(True)
   loop:
     - name: deployment.yml.j2
     - name: service.yml.j2
