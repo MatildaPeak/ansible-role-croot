@@ -1,5 +1,5 @@
-matildapeak.croot
-=================
+Ansible Role - matildapeak.croot
+================================
 
 A Role for the installation of the Matilda Peak **croot** application into a
 Kubernetes (or OpenShift) cluster.
