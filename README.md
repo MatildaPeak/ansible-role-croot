@@ -12,9 +12,6 @@ Requirements
 Role Variables
 --------------
 
-    # Create the namespace?
-    create_namespace: yes
-
     # The croot image tag and pull policy
     image_tag: 2019.2
     image_pull_policy: IfNotPresent
@@ -49,7 +46,6 @@ cluster and that you have sufficient permissions in the `croot` namespace.
         vars:
           image_tag: latest
           image_pull_policy: Always
-          create_namespace: no
 
 >   When deploying to Kubernetes a `croot` namespace is created by default.
 
