@@ -47,8 +47,6 @@ cluster and that you have sufficient permissions in the `croot` namespace.
           image_tag: latest
           image_pull_policy: Always
 
->   When deploying to Kubernetes a `croot` namespace is created by default.
-
 License
 -------
 
