@@ -13,7 +13,7 @@ Role Variables
 --------------
 
     # The croot image tag and pull policy
-    image_tag: 2019.2
+    image_tag: stable
     image_pull_policy: IfNotPresent
 
     # The port to expose the croot service on
