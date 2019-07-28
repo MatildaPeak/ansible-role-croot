@@ -1,5 +1,5 @@
-matildapeak.croot
-=================
+Ansible Role - matildapeak.croot
+================================
 
 A Role for the installation of the Matilda Peak **croot** application into a
 Kubernetes (or OpenShift) cluster.
@@ -46,8 +46,6 @@ cluster and that you have sufficient permissions in the `croot` namespace.
         vars:
           image_tag: latest
           image_pull_policy: Always
-
->   When deploying to Kubernetes a `croot` namespace is created by default.
 
 License
 -------
