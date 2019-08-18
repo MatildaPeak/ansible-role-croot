@@ -22,4 +22,3 @@ service_port: 8080
 # To uninstall from the cluster
 # set state: absent
 state: present
-

@@ -9,4 +9,5 @@ fi
 kubectl create -f namespace.yml
 kubectl config set-context --current --namespace=${NS}
 
-ansible-playbook site.yaml
+ansible-playbook site.yml \
+  -e ansible_python_interpreter=$(which python)
