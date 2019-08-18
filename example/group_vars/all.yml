@@ -1,6 +1,0 @@
----
-
-# The local Python.
-# This deals with Python in a virtual environment.
-# If not set Ansible assumes /usr/bin/python.
-ansible_python_interpreter: "{{ lookup('pipe', 'which python') }}"

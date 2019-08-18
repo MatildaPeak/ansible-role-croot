@@ -49,3 +49,9 @@ spec:
           limits:
             cpu: 1000m
             memory: 32Mi
+        env:
+        - name: CROOT_SENTRY_DSN
+          valueFrom:
+            secretKeyRef:
+              name: croot-secrets
+              key: croot-sentry-dsn

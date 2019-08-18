@@ -12,6 +12,12 @@ Requirements
 Role Variables
 --------------
 
+    # Sentry Data Source Name (DSN).
+    # This is sensitive, it's optional.
+    # The user needs to define it if events are to be passed to Sentry.
+    # See https://sentry.io
+    sentry_dsn: ''
+
     # The croot image tag and pull policy
     image_tag: stable
     image_pull_policy: IfNotPresent
