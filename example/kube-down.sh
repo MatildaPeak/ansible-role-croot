@@ -6,7 +6,6 @@ if [ ! -d "roles" ]; then
     ln -s ../.. roles/matildapeak.${NS}
 fi
 
-ansible-playbook site.yml -e state=absent \
-   -e ansible_python_interpreter=$(which python)
+ansible-playbook site.yml -e state=absent
 
 kubectl delete namespace/${NS}
