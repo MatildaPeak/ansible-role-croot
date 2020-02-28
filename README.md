@@ -42,7 +42,7 @@ Dependencies
 Example Playbook
 ----------------
 
-**NOTE** The example below assumes that you have a running Kubernetes|OpenShift
+**NOTE** The example below assumes that you have a running Kubernetes or OpenShift
 cluster and that you have sufficient permissions in the `croot` namespace.
 
     - hosts: servers
