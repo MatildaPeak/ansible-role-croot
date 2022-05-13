@@ -14,7 +14,7 @@ namespace: "{{ meta.namespace|default('croot') }}"
 
 # The image tag and pull policy
 image_tag: stable
-image_pull_policy: IfNotPresent
+image_pull_policy: Always
 
 # The port to expose the application service on
 service_port: 8080
