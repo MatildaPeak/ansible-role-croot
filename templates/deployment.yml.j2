@@ -55,3 +55,16 @@ spec:
             secretKeyRef:
               name: croot-secrets
               key: croot-sentry-dsn
+
+        # Define a securityContext to satisfy the post-v1.21 Security Standards.
+        # See the chronicler role for more information.
+        securityContext:
+          allowPrivilegeEscalation: false
+          runAsNonRoot: true
+          capabilities:
+            drop:
+            - ALL
+          seccompProfile:
+            type: RuntimeDefault
+          runAsUser: 1000
+          runAsGroup: 1000
